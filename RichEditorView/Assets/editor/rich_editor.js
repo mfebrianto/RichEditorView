@@ -238,6 +238,7 @@ RE.insertImage = function(url, alt) {
     img.onload = RE.updateHeight;
 
     RE.insertHTML(img.outerHTML);
+    RE.insertHTML("<br>");
     RE.callback("input");
 };
 
